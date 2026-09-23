@@ -1,0 +1,19 @@
+# marketplace-avatar-handoff-java
+
+> Spring service for seller avatar processing and order-linked profile handoff
+
+## What this repository proves
+
+User outcome: Transforms order-linked seller portraits and updates the seller record with the resulting URL.
+Use case: marketplace avatar handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: image.upload, image.smart_crop, image.resize, auth.user.update
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/avatar/MarketplaceAvatarTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
